@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Verse</title>
+    <link rel="icon" href="pic/book.png">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navbar-custom">
+        <ul>
+            <li class="logo">
+                <img src="pic/logo.png" alt="Logo">
+            </li>
+            <li><a href="home kh.html">ទំព័រដើម</a></li>
+            <li>
+                <a href="Categories kh.html" class="active">ប្រភេទ<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="category-dropdown">
+                    <a href="Categories kh.html">រឿងប្រឌិត</a>
+                    <a href="romance kh.html">មនោសញ្ចេតនា</a>
+                    <a href="mydtery kh.html">អាថ៌កំបាំង</a>
+                    <a href="fantasy kh.html">ស្រមើស្រមៃ</a>
+                    <a href="history kh.html">ប្រវត្តិសាស្ត្រ</a>
+                    <a href="self-help kh.html">ជួយខ្លួនឯង</a>
+                    <a href="children kh.html">កុមារ</a>
+                    <a href="manga kh.html">ម៉ាំងហ្គា</a>
+                </div>
+            </li>
+            <li><a href="authors kh.html">អ្នកនិពន្ធ</a></li>
+            <li><a href="New Arrivals kh.html">ទំនិញមកដល់ថ្មីៗ</a></li>
+            <li><a href="contact kh.html">ទំនាក់ទំនង</a></li>
+            <!-- search -->
+            <li class="search">
+                <input type="text" placeholder="Search books...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li class="wishlist">
+                <a href="wishlist kh.html">
+                    <i class="fa-regular fa-heart"></i>បញ្ជី​ប្រាថ្នា
+                </a>
+            </li>
+            <li class="cart">
+                <a href="cart kh.html">
+                    <i class="fa-solid fa-cart-shopping"></i>កន្ត្រក
+                </a>
+            </li>
+            <li class="profile">
+                <a href="profile kh.html">
+                    <i class="fa-regular fa-user"></i> គណនី
+                </a>
+            </li>
+            <span class="flag">
+                <a href="mydtery kh.html" class="acc"><img
+                        src="flag/Flag of Cambodia image and meaning Cambodian flag.jpg" alt=""></a>
+                <a href="mydtery.html" class="acc"><img src="flag/Флаг Англии.jpg" alt=""></a>
+            </span>
+        </ul>
+    </div><br>
+    <div class="categories-obtion">
+        <div class="categories-page">
+            <h2>ប្រភេទ</h2>
+            <div class="categories-choose">
+                <span><i class="fa-solid fa-book-open"></i><a href="Categories kh.html">រឿងប្រឌិត</a></span>
+                <span><i class="fa-regular fa-heart"></i><a href="romance kh.html">មនោសញ្ចេតនា</a></span>
+                <span><i class="fa-solid fa-magnifying-glass"></i><a href="mydtery kh.html"
+                        class="active">អាថ៌កំបាំង</a></span>
+                <span><i class="fa-solid fa-hat-wizard"></i><a href="fantasy kh.html">ស្រមើស្រមៃ</a></span>
+                <span><i class="fa-solid fa-archway"></i><a href="history kh.html">ប្រវត្តិសាស្ត្រ</a></span>
+                <span><i class="fa-solid fa-head-side-virus"></i><a href="self-help kh.html">ជួយខ្លួនឯង</a></span>
+                <span><i class="fa-solid fa-children"></i><a href="children kh.html">កុមារ</a></span>
+                <span><i class="fa-solid fa-book-tanakh"></i><a href="manga kh.html">ម៉ាំងហ្គា</a></span>
+            </div>
+        </div>
+        <!-- card  -->
+        <div class="best-sellers">
+            <h2>សៀវភៅអាថ៌កំបាំង</h2>
+            <div class="book-container">
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ឈូករតន៍​ -រោគ​សិប្បនិម្មិត.jpg" alt="The Midnight Library">
+                    <h3>រោគ​សិប្បនិម្មិត</h3><br>
+                    <p class="author">ឈូករតន៍</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.8)</span>
+                    </div>
+                    <p class="price">$8.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/តារានិករ-កំណត់ត្រាអ្នកស្នង.jpg" alt="Atomic Habits">
+                    <h3>កំណត់ត្រាអ្នកស្នង</h3><br>
+                    <p class="author">តារានិករ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/តាំង ហ៊ុយសេង-កោះទីបីតណ្តប់ អ្នកស្នងកោះ.jpg" alt="Atomic Habits">
+                    <h3>កោះទីបីតណ្តប់ អ្នកស្នងកោះ</h3><br>
+                    <p class="author">គ្រាប់ខ្សាច់</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/តាំង ហ៊ុយសេង, សៃ បូរីវង្សា-កោះទីបីតណ្តប់ ត្បូងរំដួលចុងក្រោយ.jpg"
+                        alt="Atomic Habits">
+                    <h3>កោះទីបីតណ្តប់ ត្បូងរំដួលចុងក្រោយ</h3>
+                    <p class="author">តាំង ហ៊ុយសេង, សៃ បូរីវង្សា</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/តាំង ហ៊ុយសេង-មានុច្ឆា.jpg" alt="Atomic Habits">
+                    <h3>មានុច្ឆា</h3><br>
+                    <p class="author">តាំង​ ហ៊ុយសេង</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/តាំង​ ហ៊ុយសេង (ទឹកសន្សេីម)-​មុខនាង - 𝐓𝐡𝐞 𝐏𝐞𝐫𝐟𝐞𝐜𝐭𝐢𝐨𝐧.jpg"
+                        alt="Atomic Habits">
+                    <h3>មុខនាង</h3>
+                    <p class="author">តាំង​ ហ៊ុយសេង</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/ទេពច្យុត (សៃ បូរីវង្សា)-ថ្ងៃដែលខ្ញុំស្លាប់- Hashi and the dark power.jpg"
+                        alt="Atomic Habits">
+                    <h3>ថ្ងៃដែលខ្ញុំស្លាប់</h3>
+                    <p class="author">ទេពច្យុត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទឹកសន្សេីម និងវាយោ-អាពាហ៍ពិពាហ៍ក្រាលឈាម-Murder on the Wedding Day.jpg"
+                        alt="Atomic Habits">
+                    <h3>អាពាហ៍ពិពាហ៍ក្រាលឈាម</h3>
+                    <p class="author">ទឹកសន្សេីម,វាយោ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទឹកសន្សេីម-កោះទីបីតណ្តប់.jpg" alt="Atomic Habits">
+                    <h3>កោះទីបីតណ្តប់</h3>
+                    <p class="author">ទឹកសន្សេីម</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/ប្រឹថពី-គូឥតខាន់ស្លា​ - Unexpected Couple.jpg" alt="Atomic Habits">
+                    <h3>គូឥតខាន់ស្លា​</h3>
+                    <p class="author">ប្រឹថពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទឹក​ សន្សើម-ផ្ទះចិញ្ចឹមសព.jpg" alt="Atomic Habits">
+                    <h3>ផ្ទះចិញ្ចឹមសព</h3><br>
+                    <p class="author">ទឹក​ សន្សើម</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទឹក​ សន្សើម​ -និទាន៦.jpg" alt="Atomic Habits">
+                    <h3>និទាន៦</h3><br>
+                    <p class="author">ទឹក​ សន្សើម</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទឹក​ សន្សើម​ និងវាយោ-ឃាតករមុខយក្ស​ - the serial killers.jpg" alt="Atomic Habits">
+                    <h3>ឃាតករមុខយក្ស</h3><br>
+                    <p class="author">ទឹក​ សន្សើម​,វាយោ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទឹក​ សន្សើម​-ព្រៃតម្កល់សព.jpg" alt="Atomic Habits">
+                    <h3>ព្រៃតម្កល់សព</h3><br>
+                    <p class="author">ទឹក​ សន្សើម</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ទេពី - Tepy -គូបញ្ឆោត​ - 𝐂𝐡𝐞𝐦𝐢𝐬𝐭𝐫𝐲 𝐨𝐟 𝐃𝐞𝐜𝐞𝐩𝐭𝐢𝐨𝐧.jpg"
+                        alt="Atomic Habits">
+                    <h3>គូបញ្ឆោត</h3><br>
+                    <p class="author">ទេពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/លីនូ-ត្រកូលចម្លងកាយ - 𝐓𝐇𝐄 𝐂𝐀𝐒𝐓𝐄𝐑𝐈𝐍𝐆.jpg" alt="Atomic Habits">
+                    <h3>ត្រកូលចម្លងកាយ</h3>
+                    <p class="author">លីនូ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/នីម៉ូសា​ -ចំណងដានជតា​ - Find me, reminder.jpg" alt="Atomic Habits">
+                    <h3>ចំណងដានជតា</h3>
+                    <p class="author">នីម៉ូសា</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ប្រឹថពី-បល្ល័ង្ក​ព្រៃ.jpg" alt="Atomic Habits">
+                    <h3>បល្ល័ង្ក​ព្រៃ</h3>
+                    <p class="author">ប្រឹថពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/លីនូ-​ទីក្រុង​អស្តង្គត​ - The Withering.jpg" alt="Atomic Habits">
+                    <h3>​ទីក្រុង​អស្តង្គត</h3>
+                    <p class="author">លីនូ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ភាព ស្រីរ័ត្ន (ឈូករតន៍)-នរក្ស.jpg" alt="Atomic Habits">
+                    <h3>នរក្ស</h3>
+                    <p class="author">សម្បត្តិ​ គឹមលក្ខ័ណ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/ភូមិរា-ត្រ័យទ្វារ៖​ ប្រអប់ខ្មៅ.jpg" alt="Atomic Habits">
+                    <h3>ត្រ័យទ្វារ៖​ ប្រអប់ខ្មៅ</h3>
+                    <p class="author">ភូមិរា</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/លី​ សុផានិត-ចេញពីអ័ព្ទ.jpg" alt="Atomic Habits">
+                    <h3>ចេញពីអ័ព្ទ</h3>
+                    <p class="author">លី​ សុផានិត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/លី សុផានិត-អ័ព្ទ.jpg" alt="Atomic Habits">
+                    <h3>អ័ព្ទ</h3>
+                    <p class="author">លី សុផានិត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="romance book/សៃ​ បូរីវង្សា​ (ទេព​ច្យុត) -កំណេីត​ទុរភិក្ស.jpg" alt="Atomic Habits">
+                    <h3><b>The birth of famine</b></h3>
+                    <p class="author">ទេព​ច្យុត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="fantasy/J. K. Rowling-The Ickabog .jpe" alt="Atomic Habits">
+                    <h3><b>The Ickabog</b></h3>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-The Cuckoo's Calling.jpg" alt="Atomic Habits">
+                    <h3><b>The Cuckoo's Calling</b></h3>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-Career of Evil .jpe" alt="Atomic Habits">
+                    <h3><b>Career of Evil </b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-Lethal White .jpe" alt="Atomic Habits">
+                    <h3><b>Lethal White</b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-The Hallmarked Man.jpe" alt="Atomic Habits">
+                    <h3><b>The Hallmarked Man</b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-The Ink Black Heart.jpe" alt="Atomic Habits">
+                    <h3><b>The Ink Black Heart</b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-The Running Grave.jpe" alt="Atomic Habits">
+                    <h3><b>The Running Grave</b></h3><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-The Silkworm_ A Cormoran.jpe" alt="Atomic Habits">
+                    <h3><b>The Silkworm</b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J. K. Rowling-Troubled Blood .jpe" alt="Atomic Habits">
+                    <h3><b>Troubled Blood</b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J.K. Rowling-Harry Potter and the Prisoner of Azkaban by.jpg" alt="Atomic Habits">
+                    <h3><b>Harry Potter and the Prisoner of Azkaban</b></h3>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J.K. Rowling-Harry Potter and the Chamber of Secrets.jpe" alt="Atomic Habits">
+                    <h3><b>Harry Potter and the Chamber of Secrets</b></h3>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/J.K. Rowling-Harry Potter and the Goblet of Fire.jpe" alt="Atomic Habits">
+                    <h3><b>Harry Potter and the Goblet of Fire</b></h3><br>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/Lin Thompson-The House That Whispers-.jpe" alt="Atomic Habits">
+                    <h3><b>The House That Whispers</b></h3><br>
+                    <p class="author">Lin Thompson</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/go byeong mo-The Wizard's Bakery .jpe" alt="Atomic Habits">
+                    <h3><b>The Wizard's Bakery</b></h3><br><br>
+                    <p class="author">Go Byeong Mo</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/Haruki Murakami-A Wild Sheep Chase .jpe" alt="Atomic Habits">
+                    <h3><b>A Wild Sheep Chase</b></h3><br><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/Haruki Murakami-Kafka on the Shore .jpe" alt="Atomic Habits">
+                    <h3><b>Kafka on the Shore</b></h3><br><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/Haruki Murakami-The Wind-Up Bird Chronicle.jpe" alt="Atomic Habits">
+                    <h3><b>The Wind-Up Bird Chronicle</b></h3><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card " data-aos="fade-up">
+                    <img src="mystery/Haruki Murakami_ Dance Dance Dance_.jpe" alt="Atomic Habits">
+                    <h3><b>Dance Dance Dance</b></h3><br><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+            </div>
+        </div><br>
+    </div><br><br>
+    <!-- footer -->
+    <div data-aos="fade-up">
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="pic/logo.png" alt="">
+                <h4>"សៀវភៅនីមួយៗបើកពិភពលោកថ្មីមួយ។"</h4>
+                <p>---------------------------------------</p>
+                <div class="logo-icon">
+                    <div class="delivery">
+                        <i class="fa-solid fa-box-open"></i>
+                        <p>Fast <br> <span>Delivery</span></p>
+                    </div>
+                    <div class="delivery">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>
+                            <font style="margin-left: -6px;">Secure</font><br> <span>Payment</span>
+                        </p>
+                    </div>
+                    <div class="delivery">
+                        <i class="fa-solid fa-headset"></i>
+                        <p>24/7 <br> <span>Support</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-list">
+                <h4>បញ្ជីរហ័ស៖</h4>
+                <a href="home kh.html" class="active"><i class="fa-solid fa-caret-right"></i>ទំព័រដើម</a><br>
+                <a href="Categories kh.html"><i class="fa-solid fa-caret-right"></i>ប្រភេទ</a><br>
+                <a href="authors kh.html"><i class="fa-solid fa-caret-right"></i>អ្នកនិពន្ធ</a><br>
+                <a href="New Arrivals kh.html"><i class="fa-solid fa-caret-right"></i>ទំនិញមកដល់ថ្មីៗ</a><br>
+                <a href="contact kh.html"><i class="fa-solid fa-caret-right"></i>ទំនាក់ទំនង</a><br>
+            </div>
+            <div class="Customer-Service">
+                <h4>សេវាកម្មអតិថិជន៖</h4>
+                <a href="" class="active">អំពីយើង</a><br>
+                <a href="">សំណួរដែលសួរញឹកញាប់</a><br>
+                <a href="">ការដឹកជញ្ជូន</a><br>
+                <a href="">ការប្រគល់ និងការសងប្រាក់វិញ</a><br>
+                <a href="">លក្ខខណ្ឌ</a><br>
+                <a href="">គោលការណ៍ឯកជនភាព</a><br>
+            </div>
+            <div class="Stay-Connected">
+                <h4>រក្សាទំនាក់ទំនង៖</h4><br>
+                <p>តាមដានពួកយើងនៅលើប្រព័ន្ធផ្សព្វផ្សាយសង្គម <br> និងទទួលបានព័ត៌មានថ្មីៗ </p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div><br>
+                <div class="Accept">
+                    <h5>ពួកយើងទទួល</h5>
+                    <img src="pic/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

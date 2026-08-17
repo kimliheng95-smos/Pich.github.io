@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Verse</title>
+    <link rel="icon" href="pic/book.png">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navbar-custom">
+        <ul>
+            <li class="logo">
+                <img src="pic/logo.png" alt="Logo">
+            </li>
+            <li><a href="Home.html">Home</a></li>
+            <li>
+                <a href="Categories.html">Categories<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="category-dropdown">
+                    <a href="Categories.html">Fiction</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="mydtery.html">Mystery</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="history.html">History</a>
+                    <a href="self-help.html">Self Help</a>
+                    <a href="children.html">Children</a>
+                    <a href="manga.html">Manga</a>
+                </div>
+            </li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="New Arrivals.html" class="active">New Arrivals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- search -->
+            <li class="search">
+                <input type="text" placeholder="Search books...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li class="wishlist">
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>Wishlist
+                </a>
+            </li>
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>Cart
+                </a>
+            </li>
+            <li class="profile">
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i> Account
+                </a>
+            </li>
+            <span class="flag">
+                <a href="New Arrivals kh.html" class="acc"><img src="flag/Flag of Cambodia image and meaning Cambodian flag.jpg" alt=""></a>
+                <a href="New Arrivals.html" class="acc"><img src="flag/Флаг Англии.jpg" alt=""></a>
+            </span>
+        </ul>
+    </div> <br><br>
+    <!-- new arrivals  -->
+    <div class="best-sellers">
+        <h2>New Arrivals</h2>
+        <div class="book-container">
+            <div class="book-card" data-aos="fade-up">
+                <img src="romance book/ទេពច្យុតឥសម្លាញ់មិនមែនស្រលាញ់.jpg" alt="Atomic Habits">
+                <h3><b>Buddy In Love</b></h3><br>
+                <p class="author">ទេពច្យុត</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$8.5</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="romance book/លី សុផានិត-ដំបូងមិត្ត.jpg" alt="Atomic Habits">
+                <h3><b>Closer</b></h3><br>
+                <p class="author">លី សុផានិត</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$8</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="fantasy/លីនូ-ត្រកូលចម្លងកាយ - 𝐓𝐇𝐄 𝐂𝐀𝐒𝐓𝐄𝐑𝐈𝐍𝐆.jpg" alt="Atomic Habits">
+                <h3><b>The Castering</b></h3><br>
+                <p class="author">លីនូ</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$8.75</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="romance book/ប្រឹថពី-គូឥតខាន់ស្លា​ - Unexpected Couple.jpg" alt="Atomic Habits">
+                <h3><b>Unexpected Couple</b></h3><br>
+                <p class="author">ប្រឹថពី</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$9.5</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="romance book/និទាឃៈ​-ផ្ការីកនាយសមុទ្រ​ - every spring.jpg" alt="Atomic Habits">
+                <h3><b>Every Spring</b></h3><br>
+                <p class="author">និទាឃៈ</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$8.5</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="fiction book/C.S. Lewis-The Lion, the Witch and the Wardrobe  .jpg"
+                    alt="The Midnight Library">
+                <h3><b>The Lion, the Witch and the Wardrobe</b></h3>
+                <p class="author">C.S. Lewis</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.8)</span>
+                </div>
+                <p class="price">$9</p>
+                <button>Add to Cart</button>
+            </div>
+            <!-- Card 2 -->
+            <div class="book-card" data-aos="fade-up">
+                <img src="fiction book/J.K. Rowling-The Fellowship of the Ring.jpg" alt="Atomic Habits">
+                <h3><b>The Fellowship of the Ring</b></h3>
+                <p class="author">J.K. Rowling</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="fiction book/hika harada-Dinner at the Night Library.jpe" alt="Atomic Habits">
+                <h3><b>Dinner at the Night Library</b></h3>
+                <p class="author">Hika Harada</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="fiction book/Rick Riordan-Percy Jackson and the Lightning Thief  .jpg" alt="Atomic Habits">
+                <h3><b>Percy Jackson and the Lightning Thief</b></h3>
+                <p class="author">Rick Riordan</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$8</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="fiction book/Hiro Arikawa-The Travelling Cat Chronicles .jpe" alt="Atomic Habits">
+                <h3><b>The Travelling Cat Chronicles</b></h3>
+                <p class="author">Hiro Arikawa</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$6</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="fiction book/Toshikazu Kawaguchi-Before I Knew I Loved You_.jpe" alt="Atomic Habits">
+                <h3><b>Before I Knew I Loved You</b></h3>
+                <p class="author">Toshikazu Kawaguchi</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/ZIG-Roses and Champagne (Comic) Vol. 1.jpg" alt="Atomic Habits">
+                <h3><b>Roses and Champagne Vol. 1</b></h3>
+                <p class="author">ZIG</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/ZIG-Roses and Champagne (Comic) Vol. 2.jpg" alt="Atomic Habits">
+                <h3><b>Roses and Champagne Vol. 2</b></h3><br><br>
+                <p class="author">ZIG</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/ZIG-Roses and Champagne (Comic) Vol. 3.jpg" alt="Atomic Habits">
+                <h3><b>Roses and Champagne Vol. 3</b></h3><br><br>
+                <p class="author">ZIG</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/Nikuya Inui -How to Deal When Your Intimidating Neighbor is Actually an Omega 2.jpg"
+                    alt="Atomic Habits">
+                <h3><b>How to Deal When Your Intimidating Neighbor is Actually an Omega 2</b></h3>
+                <p class="author">Nikuya Inui</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/Nikuya Inui -How to Deal When Your Intimidating Neighbor is Actually an Omega.jpg"
+                    alt="Atomic Habits">
+                <h3><b>How to Deal When Your Intimidating Neighbor is Actually an Omega 1</b></h3>
+                <p class="author">Nikuya Inui</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/Mottasu Tonooka-Betrayers Love Song, Volume 1.jpg" alt="Atomic Habits">
+                <h3><b>Betrayers Love Song, Volume 1</b></h3><br><br>
+                <p class="author">Mottasu Tonooka-</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="book-card" data-aos="fade-up">
+                <img src="manga/Mottasu Tonooka-Betrayers Love Song, Volume 2.jpg" alt="Atomic Habits">
+                <h3><b>Betrayers Love Song, Volume 2</b></h3><br><br>
+                <p class="author">Mottasu Tonooka-</p>
+                <div class="rating">
+                    ★★★★★ <span>(4.9)</span>
+                </div>
+                <p class="price">$15</p>
+                <button>Add to Cart</button>
+            </div>
+        </div><br><br>
+    </div>
+    <!-- footer -->
+    <div class="footer" data-aos="fade-up">
+        <div class="logo-footer">
+            <img src="pic/logo.png" alt="">
+            <h4>"Every Book Opens a New World."</h4>
+            <p>---------------------------------------</p>
+            <div class="logo-icon">
+                <div class="delivery">
+                    <i class="fa-solid fa-box-open"></i>
+                    <p>Fast <br> <span>Delivery</span></p>
+                </div>
+                <div class="delivery">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>
+                        <font style="margin-left: -6px;">Secure</font><br> <span>Payment</span>
+                    </p>
+                </div>
+                <div class="delivery">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>24/7 <br> <span>Support</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="quick-list">
+            <h4>Quick list:</h4>
+            <a href="Home.html" class="active"><i class="fa-solid fa-caret-right"></i>Home</a><br>
+            <a href="Categories.html"><i class="fa-solid fa-caret-right"></i>Categories</a><br>
+            <a href="authors.html"><i class="fa-solid fa-caret-right"></i>Authors</a><br>
+            <a href="Best sellers.html"><i class="fa-solid fa-caret-right"></i>New Arrivals</a><br>
+            <a href="contact.html"><i class="fa-solid fa-caret-right"></i>Contact</a><br>
+        </div>
+        <div class="Customer-Service">
+            <h4>Customer Service:</h4>
+            <a href="Home.html" class="active">About me</a><br>
+            <a href="Categories.html">FAQs</a><br>
+            <a href="authors.html">Shipping & Delivery</a><br>
+            <a href="Best sellers.html">Return & Refunds</a><br>
+            <a href="contact.html">Terms & Conditions</a><br>
+            <a href="contact.html">Privacy Policy</a><br>
+        </div>
+        <div class="Stay-Connected">
+            <h4>Stay Connected:</h4><br>
+            <p>Follow us on social media <br> and Stay updated</p>
+            <div class="social-icon">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div><br>
+            <div class="Accept">
+                <h5>We Accept</h5>
+                <img src="pic/cart.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

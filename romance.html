@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Verse</title>
+    <link rel="icon" href="pic/book.png">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navbar-custom">
+        <ul>
+            <li class="logo">
+                <img src="pic/logo.png" alt="Logo">
+            </li>
+            <li><a href="Home.html">Home</a></li>
+            <li>
+                <a href="Categories.html" class="active">Categories<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="category-dropdown">
+                    <a href="Categories.html">Fiction</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="mydtery.html">Mystery</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="history.html">History</a>
+                    <a href="self-help.html">Self Help</a>
+                    <a href="children.html">Children</a>
+                    <a href="manga.html">Manga</a>
+                </div>
+            </li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="New Arrivals.html">New Arrivals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- search -->
+            <li class="search">
+                <input type="text" placeholder="Search books...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li class="wishlist">
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>Wishlist
+                </a>
+            </li>
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>Cart
+                </a>
+            </li>
+            <li class="profile">
+                <a href="profile.html">
+                    <i class="fa-regular fa-user"></i> Account
+                </a>
+            </li>
+            <span class="flag">
+                <a href="romance kh.html" class="acc"><img src="flag/Flag of Cambodia image and meaning Cambodian flag.jpg" alt=""></a>
+                <a href="romance.html" class="acc"><img src="flag/Флаг Англии.jpg" alt=""></a>
+            </span>
+        </ul>
+    </div><br>
+    <div class="categories-obtion">
+        <div class="categories-page">
+            <h2>Categories</h2>
+            <div class="categories-choose">
+                <span><i class="fa-solid fa-book-open"></i><a href="Categories.html" >Fiction</a></span>
+                <span><i class="fa-regular fa-heart"></i><a href="romance.html" class="active">Romance</a></span>
+                <span><i class="fa-solid fa-magnifying-glass"></i><a href="mydtery.html">Mystery</a></span>
+                <span><i class="fa-solid fa-hat-wizard"></i><a href="fantasy.html">Fantasy</a></span>
+                <span><i class="fa-solid fa-archway"></i><a href="history.html">History</a></span>
+                <span><i class="fa-solid fa-head-side-virus"></i><a href="self-help.html">Self Help</a></span>
+                <span><i class="fa-solid fa-children"></i><a href="children.html">Children</a></span>
+                <span><i class="fa-solid fa-book-tanakh"></i><a href="manga.html">Manga</a></span>
+            </div>
+        </div>
+        <!-- card  -->
+        <div class="best-sellers">
+            <h2>Romance Books</h2>
+            <div class="book-container">
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Chantha-វិស្សមកាល​អំពិលអំពែក​.jpg" alt="The Midnight Library">
+                    <h3>វិស្សមកាល​អំពិលអំពែក</h3><br>
+                    <p class="author">Chantha</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.8)</span>
+                    </div>
+                    <p class="price">$8.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Wizard D-ទឹកកន្លះកែវ​ - 𝐚 𝐠𝐥𝐚𝐬𝐬 𝐡𝐚𝐥𝐟 𝐟𝐮𝐥𝐥.jpe" alt="Atomic Habits">
+                    <h3>ទឹកកន្លះកែវ</h3><br>
+                    <p class="author">Wizard D</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/គ្រាប់ខ្សាច់-មានតែអ្នក - never say goodbye.jpg" alt="Atomic Habits">
+                    <h3>មានតែអ្នក</h3><br>
+                    <p class="author">គ្រាប់ខ្សាច់</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/តាំង ហ៊ុយសេង, សៃ បូរីវង្សា-កោះទីបីតណ្តប់ ត្បូងរំដួលចុងក្រោយ.jpg"
+                        alt="Atomic Habits">
+                    <h3>កោះទីបីតណ្តប់ ត្បូងរំដួលចុងក្រោយ</h3>
+                    <p class="author">តាំង ហ៊ុយសេង, សៃ បូរីវង្សា</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/តាំង​ ហ៊ុយសេង (ទឹកសន្សេីម)-​មុខនាង - 𝐓𝐡𝐞 𝐏𝐞𝐫𝐟𝐞𝐜𝐭𝐢𝐨𝐧.jpg"
+                        alt="Atomic Habits">
+                    <h3>​មុខនាង</h3><br>
+                    <p class="author">តាំង​ ហ៊ុយសេង</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/Toshikazu Kawaguchi-Before I Knew I Loved You_.jpe" alt="Atomic Habits">
+                    <h3><b>Before I Knew I Loved You</b></h3>
+                    <p class="author">Toshikazu Kawaguchi</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ទេពច្យុត (សៃ បូរីវង្សា)-ថ្ងៃដែលខ្ញុំស្លាប់- Hashi and the dark power.jpg"
+                        alt="Atomic Habits">
+                    <h3>ថ្ងៃដែលខ្ញុំស្លាប់</h3><br>
+                    <p class="author">ទេពច្យុត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ទេពច្យុតឥសម្លាញ់មិនមែនស្រលាញ់.jpg" alt="Atomic Habits">
+                    <h3>សម្លាញ់មិនមែនស្រលាញ់</h3><br>
+                    <p class="author">ទេពច្យុត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/និទាឃៈ​-ផ្ការីកនាយសមុទ្រ​ - every spring.jpg" alt="Atomic Habits">
+                    <h3>ផ្ការីកនាយសមុទ្រ</h3><br>
+                    <p class="author">និទាឃៈ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ប្រឹថពី-គូឥតខាន់ស្លា​ - Unexpected Couple.jpg" alt="Atomic Habits">
+                    <h3>គូឥតខាន់ស្លា</h3><br>
+                    <p class="author">ប្រឹថពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ប្រឹថពី-ថ្ងៃណាមេឃស្រឡះ.jpg" alt="Atomic Habits">
+                    <h3>ថ្ងៃណាមេឃស្រឡះ</h3><br>
+                    <p class="author">ប្រឹថពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ប្រឹថពី-បេះដូងក្រដាស់.jpg" alt="Atomic Habits">
+                    <h3>បេះដូងក្រដាស់</h3><br>
+                    <p class="author">ប្រឹថពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ប្រឹថពី-​សរទរដូវ​វិលវិញ.jpg" alt="Atomic Habits">
+                    <h3>សរទរដូវ​វិលវិញ</h3><br>
+                    <p class="author">ប្រឹថពី</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/ផលសា-ស្នេហាខណ្ឌចប់.jpg" alt="Atomic Habits">
+                    <h3>ស្នេហាខណ្ឌចប់</h3><br>
+                    <p class="author">ផលសា</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/លី សុផានិត-ដំបូងមិត្ត.jpg" alt="Atomic Habits">
+                    <h3>ដំបូងមិត្ត</h3><br>
+                    <p class="author">លី សុផានិត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/លីនូ-ត្រកូលចម្លងកាយ - 𝐓𝐇𝐄 𝐂𝐀𝐒𝐓𝐄𝐑𝐈𝐍𝐆.jpg" alt="Atomic Habits">
+                    <h3>ត្រកូលចម្លងកាយ</h3>
+                    <p class="author">លីនូ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/លីនូ-ពិភព​ពីរ៖​ ថ្ងៃស្អែកជាមួយអ្នក.jpg" alt="Atomic Habits">
+                    <h3>ថ្ងៃស្អែកជាមួយអ្នក</h3>
+                    <p class="author">លីនូ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/លីនូ-ពិភព​ពីរ៖​ មួយថ្ងៃជាមួយអ្នក​.jpg" alt="Atomic Habits">
+                    <h3>មួយថ្ងៃជាមួយអ្នក</h3>
+                    <p class="author">Durian Sukegawa</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/លីនូ-​ទីក្រុង​អស្តង្គត​ - The Withering.jpg" alt="Atomic Habits">
+                    <h3>​ទីក្រុង​អស្តង្គត</h3>
+                    <p class="author">លីនូ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/សម្បត្តិ​ គឹមលក្ខ័ណ​ (ផ្កាម្លិះ)ឥអរ៉ូរ៉ារដូវក្តៅ​ - 𝐦𝐢𝐝𝐧𝐢𝐠𝐡𝐭 𝐬𝐮𝐧 𝐚𝐮𝐫𝐨𝐫𝐚.jpe"
+                        alt="Atomic Habits">
+                    <h3>ឥអរ៉ូរ៉ារដូវក្តៅ</h3>
+                    <p class="author">សម្បត្តិ​ គឹមលក្ខ័ណ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/ann liang-i hope this doesn't find you.jpe" alt="Atomic Habits">
+                    <h3><b>I hope this doesn't find you</b></h3>
+                    <p class="author">Ann Liang</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/លី​ សុផានិត-ចេញពីអ័ព្ទ.jpg" alt="Atomic Habits">
+                    <h3>ចេញពីអ័ព្ទ</h3><br>
+                    <p class="author">លី​ សុផានិត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/វាយោ-សៀវភៅលាក់ទុក្ខ - 𝐓𝐡𝐞 𝐁𝐨𝐨𝐤 𝐨𝐟 𝐆𝐫𝐢𝐞𝐟.jpg"
+                        alt="Atomic Habits">
+                    <h3>សៀវភៅលាក់ទុក្ខ </h3><br>
+                    <p class="author">វាយោ</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/សៃ​ បូរីវង្សា​ (ទេព​ច្យុត) -កំណេីត​ទុរភិក្ស.jpg" alt="Atomic Habits">
+                    <h3>កំណេីត​ទុរភិក្ស</h3><br>
+                    <p class="author">ទេព​ច្យុត</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Ann Liang-A Song to Drown Rivers.jpe" alt="Atomic Habits">
+                    <h3><b>A Song to Drown Rivers</b></h3>
+                    <p class="author">Ann Liang</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/L. M. montgomery-anne of green gables.jpe" alt="Atomic Habits">
+                    <h3><b>Anne of Green Gables</b></h3>
+                    <p class="author">L. M. montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Ann Liang-If You Could See the Sun .jpe" alt="Atomic Habits">
+                    <h3><b>If You Could See the Sun </b></h3>
+                    <p class="author">Ann Liang</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Ann Liang-This Time It's Real .jpe" alt="Atomic Habits">
+                    <h3><b>This Time It's Real</b></h3><br>
+                    <p class="author">Ann Liang</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/L. M. Montgomery-Anne of the Island.jpe" alt="Atomic Habits">
+                    <h3 class="hdbs"><b>Anne of the Island</b></h3><br>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Haruki Murakami-Men Without Women.jpe" alt="Atomic Habits">
+                    <h3><b>Men Without Women</b></h3><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/Haruki Murakami-Sputnik Sweetheart .jpe" alt="Atomic Habits">
+                    <h3><b>Sputnik Sweetheart</b></h3><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/L. M. Montgomery-Anne's House of Dreams.jpe" alt="Atomic Habits">
+                    <h3><b>Anne's House of Dreams</b></h3>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Markus Zusak-When Dogs Cry.jpe" alt="Atomic Habits">
+                    <h3><b>When Dogs Cry</b></h3><br>
+                    <p class="author">Markus Zusak</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/Haruki Murakami-Norwegian Wood .jpe" alt="Atomic Habits">
+                    <h3><b>Norwegian Wood</b></h3><br>
+                    <p class="author">Haruki Murakami</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Matt Haig-How to Stop Time.jpe" alt="Atomic Habits">
+                    <h3><b>How to Stop Time</b></h3><br>
+                    <p class="author">Matt Haig</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/L. M. Montgomery-The Blue Castle.jpg" alt="Atomic Habits">
+                    <h3><b>The Blue Castle</b></h3><br><br>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Hika Harada-The Second Chance Convenience Store .jpe" alt="Atomic Habits">
+                    <h3><b>The Second Chance Convenience Store</b></h3><br>
+                    <p class="author">Hika Harada</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/hwang bo reum-welcome to the hyunam dong bookshop.jpe" alt="Atomic Habits">
+                    <h3><b>WC to the hyunam dong bookshop</b></h3><br>
+                    <p class="author">Hwang Bo Reum</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/satoshi yagisawa-Days at the Morisaki Bookshop.jpe" alt="Atomic Habits">
+                    <h3><b>Days at the Morisaki Bookshop</b></h3><br>
+                    <p class="author">Satoshi Yagisawa</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="romance book/Satoshi Yagisawa-More Days at the Morisaki Bookshop.jpe" alt="Atomic Habits">
+                    <h3><b>More Days at the Morisaki Bookshop</b></h3><br>
+                    <p class="author">Satoshi Yagisawa</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+        </div><br>
+    </div><br><br>
+    <!-- footer -->
+    <div class="footer" data-aos="fade-up">
+        <div class="logo-footer">
+            <img src="pic/logo.png" alt="">
+            <h4>"Every Book Opens a New World."</h4>
+            <p>---------------------------------------</p>
+            <div class="logo-icon">
+                <div class="delivery">
+                    <i class="fa-solid fa-box-open"></i>
+                    <p>Fast <br> <span>Delivery</span></p>
+                </div>
+                <div class="delivery">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>
+                        <font style="margin-left: -6px;">Secure</font><br> <span>Payment</span>
+                    </p>
+                </div>
+                <div class="delivery">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>24/7 <br> <span>Support</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="quick-list">
+            <h4>Quick list:</h4>
+            <a href="Home.html" class="active"><i class="fa-solid fa-caret-right"></i>Home</a><br>
+            <a href="Categories.html"><i class="fa-solid fa-caret-right"></i>Categories</a><br>
+            <a href="authors.html"><i class="fa-solid fa-caret-right"></i>Authors</a><br>
+            <a href="Best sellers.html"><i class="fa-solid fa-caret-right"></i>New Arrivals</a><br>
+            <a href="contact.html"><i class="fa-solid fa-caret-right"></i>Contact</a><br>
+        </div>
+        <div class="Customer-Service">
+            <h4>Customer Service:</h4>
+            <a href="Home.html" class="active">About me</a><br>
+            <a href="Categories.html">FAQs</a><br>
+            <a href="authors.html">Shipping & Delivery</a><br>
+            <a href="Best sellers.html">Return & Refunds</a><br>
+            <a href="contact.html">Terms & Conditions</a><br>
+            <a href="contact.html">Privacy Policy</a><br>
+        </div>
+        <div class="Stay-Connected">
+            <h4>Stay Connected:</h4><br>
+            <p>Follow us on social media <br> and Stay updated</p>
+            <div class="social-icon">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div><br>
+            <div class="Accept">
+                <h5>We Accept</h5>
+                <img src="pic/cart.png" alt="">
+            </div>
+        </div>
+    </div>
+     <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

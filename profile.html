@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Verse</title>
+    <link rel="icon" href="pic/book.png">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navbar-custom">
+        <ul>
+            <li class="logo">
+                <img src="pic/logo.png" alt="Logo">
+            </li>
+            <li><a href="Home.html">Home</a></li>
+            <li>
+                <a href="Categories.html">Categories<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="category-dropdown">
+                    <a href="Categories.html">Fiction</a>
+                    <a href="romance.html">Romance</a>
+                    <a href="mydtery.html">Mystery</a>
+                    <a href="fantasy.html">Fantasy</a>
+                    <a href="history.html">History</a>
+                    <a href="self-help.html">Self Help</a>
+                    <a href="children.html">Children</a>
+                    <a href="manga.html">Manga</a>
+                </div>
+            </li>
+            <li><a href="authors.html">Authors</a></li>
+            <li><a href="New Arrivals.html">New Arrivals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- search -->
+            <li class="search">
+                <input type="text" placeholder="Search books...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li class="wishlist">
+                <a href="wishlist.html">
+                    <i class="fa-regular fa-heart"></i>Wishlist
+                </a>
+            </li>
+            <li class="cart">
+                <a href="cart.html">
+                    <i class="fa-solid fa-cart-shopping"></i>Cart
+                </a>
+            </li>
+            <li class="profile">
+                <a href="profile.html" class="active">
+                    <i class="fa-regular fa-user"></i> Account
+                </a>
+            </li>
+            <span class="flag">
+                <a href="profile kh.html" class="acc"><img src="flag/Flag of Cambodia image and meaning Cambodian flag.jpg" alt=""></a>
+                <a href="profile.html" class="acc"><img src="flag/Флаг Англии.jpg" alt=""></a>
+            </span>
+        </ul>
+    </div>
+    <div class="page" data-aos="fade-up">
+        <h1>My Account</h1>
+    </div>
+    <div class="account-container">
+        <div class="sidebar" data-aos="fade-up">
+            <a href="#" class="menu-item">
+                <div class="icon">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <span>Account Overview</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                   <i class="fa-solid fa-box-open"></i>
+                </span>
+                <span>Orders</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <i class="fa-regular fa-heart"></i>
+                </span>
+                <span>Wishlist</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </span>
+                <span>Addresses</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <i class="fa-regular fa-credit-card"></i>
+                </span>
+                <span>Payment Methods</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <i class="fa-solid fa-lock"></i>
+                </span>
+                <span>Change Password</span>
+            </a>
+            <a href="#" class="menu-item">
+                <span class="icon">
+                    <i class="fa-solid fa-caret-left"></i>
+                </span>
+                <span>Logout</span>
+            </a>
+        </div>
+        <div class="account-content" data-aos="fade-up">
+            <h2>Account Overview</h2>
+            <div class="profile">
+                <div class="profile-picture">
+                     <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="profile-info">
+                    <h3>Hello, Phaha Pich!</h3>
+                    <p>phahapich@email.com</p>
+                    <p>+855 85 710 966</p>
+                    <button class="edit-button">
+                        Edit Profile
+                    </button>
+                </div>
+            </div>
+            <hr>
+            <h2 class="quick-link">Quick Links</h2>
+            <div class="quick-links">
+                <a href="#" class="quick-item">
+                    <div class="quick-icon">
+                        <i class="fa-solid fa-clipboard-list"></i>
+                    </div>
+                    <h3>My Orders</h3>
+                    <p>View your orders</p>
+                </a>
+                <a href="#" class="quick-item">
+                    <div class="quick-icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <h3>Wishlist</h3>
+                    <p>Items you love</p>
+                </a>
+                <!-- Addresses -->
+                <a href="#" class="quick-item">
+                    <div class="quick-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <h3>Addresses</h3>
+                    <p>Manage addresses</p>
+                </a>
+                <!-- Payment -->
+                <a href="#" class="quick-item">
+                    <div class="quick-icon">
+                       <i class="fa-regular fa-credit-card"></i>
+                    </div>
+                    <h3>Payment Methods</h3>
+                    <p>Manage payments</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="logo-footer">
+            <img src="pic/logo.png" alt="">
+            <h4>"Every Book Opens a New World."</h4>
+            <p>---------------------------------------</p>
+            <div class="logo-icon">
+                <div class="delivery">
+                    <i class="fa-solid fa-box-open"></i>
+                    <p>Fast <br> <span>Delivery</span></p>
+                </div>
+                <div class="delivery">
+                    <i class="fa-regular fa-circle-check"></i>
+                    <p>
+                        <font style="margin-left: -6px;">Secure</font><br> <span>Payment</span>
+                    </p>
+                </div>
+                <div class="delivery">
+                    <i class="fa-solid fa-headset"></i>
+                    <p>24/7 <br> <span>Support</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="quick-list">
+            <h4>Quick list:</h4>
+            <a href="Home.html" class="active"><i class="fa-solid fa-caret-right"></i>Home</a><br>
+            <a href="Categories.html"><i class="fa-solid fa-caret-right"></i>Categories</a><br>
+            <a href="authors.html"><i class="fa-solid fa-caret-right"></i>Authors</a><br>
+            <a href="Best sellers.html"><i class="fa-solid fa-caret-right"></i>New Arrivals</a><br>
+            <a href="contact.html"><i class="fa-solid fa-caret-right"></i>Contact</a><br>
+        </div>
+        <div class="Customer-Service">
+            <h4>Customer Service:</h4>
+            <a href="Home.html" class="active">About me</a><br>
+            <a href="Categories.html">FAQs</a><br>
+            <a href="authors.html">Shipping & Delivery</a><br>
+            <a href="Best sellers.html">Return & Refunds</a><br>
+            <a href="contact.html">Terms & Conditions</a><br>
+            <a href="contact.html">Privacy Policy</a><br>
+        </div>
+        <div class="Stay-Connected">
+            <h4>Stay Connected:</h4><br>
+            <p>Follow us on social media <br> and Stay updated</p>
+            <div class="social-icon">
+                <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-telegram"></i></a>
+                <a href=""><i class="fa-brands fa-tiktok"></i></a>
+            </div><br>
+            <div class="Accept">
+                <h5>We Accept</h5>
+                <img src="pic/cart.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+      AOS.init();
+    </script>
+</body>
+
+</html>

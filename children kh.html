@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Verse</title>
+    <link rel="icon" href="pic/book.png">
+    <!-- css -->
+    <link rel="stylesheet" href="index.css">
+    <!-- icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <!-- navigation -->
+    <div class="navbar-custom">
+        <ul>
+            <li class="logo">
+                <img src="pic/logo.png" alt="Logo">
+            </li>
+            <li><a href="home kh.html">ទំព័រដើម</a></li>
+            <li>
+                <a href="Categories kh.html" class="active">ប្រភេទ<i class="fa-solid fa-chevron-down"></i></a>
+                <div class="category-dropdown">
+                    <a href="Categories kh.html">រឿងប្រឌិត</a>
+                    <a href="romance kh.html">មនោសញ្ចេតនា</a>
+                    <a href="mydtery kh.html">អាថ៌កំបាំង</a>
+                    <a href="fantasy kh.html">ស្រមើស្រមៃ</a>
+                    <a href="history kh.html">ប្រវត្តិសាស្ត្រ</a>
+                    <a href="self-help kh.html">ជួយខ្លួនឯង</a>
+                    <a href="children kh.html">កុមារ</a>
+                    <a href="manga kh.html">ម៉ាំងហ្គា</a>
+                </div>
+            </li>
+            <li><a href="authors kh.html">អ្នកនិពន្ធ</a></li>
+            <li><a href="New Arrivals kh.html">ទំនិញមកដល់ថ្មីៗ</a></li>
+            <li><a href="contact kh.html">ទំនាក់ទំនង</a></li>
+            <!-- search -->
+            <li class="search">
+                <input type="text" placeholder="Search books...">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </li>
+            <li class="wishlist">
+                <a href="wishlist kh.html">
+                    <i class="fa-regular fa-heart"></i>បញ្ជី​ប្រាថ្នា
+                </a>
+            </li>
+            <li class="cart">
+                <a href="cart kh.html">
+                    <i class="fa-solid fa-cart-shopping"></i>កន្ត្រក
+                </a>
+            </li>
+            <li class="profile">
+                <a href="profile kh.html">
+                    <i class="fa-regular fa-user"></i> គណនី
+                </a>
+            </li>
+            <span class="flag">
+                <a href="children kh.html" class="acc"><img src="flag/Flag of Cambodia image and meaning Cambodian flag.jpg" alt=""></a>
+                <a href="children.html" class="acc"><img src="flag/Флаг Англии.jpg" alt=""></a>
+            </span>
+        </ul>
+    </div><br>
+    <div class="categories-obtion">
+        <div class="categories-page">
+            <h2>ប្រភេទ</h2>
+            <div class="categories-choose">
+                <span><i class="fa-solid fa-book-open"></i><a href="Categories kh.html">រឿងប្រឌិត</a></span>
+                <span><i class="fa-regular fa-heart"></i><a href="romance kh.html">មនោសញ្ចេតនា</a></span>
+                <span><i class="fa-solid fa-magnifying-glass"></i><a href="mydtery kh.html">អាថ៌កំបាំង</a></span>
+                <span><i class="fa-solid fa-hat-wizard"></i><a href="fantasy kh.html">ស្រមើស្រមៃ</a></span>
+                <span><i class="fa-solid fa-archway"></i><a href="history kh.html">ប្រវត្តិសាស្ត្រ</a></span>
+                <span><i class="fa-solid fa-head-side-virus"></i><a href="self-help kh.html" >ជួយខ្លួនឯង</a></span>
+                <span><i class="fa-solid fa-children"></i><a href="children kh.html" class="active">កុមារ</a></span>
+                <span><i class="fa-solid fa-book-tanakh"></i><a href="manga kh.html">ម៉ាំងហ្គា</a></span>
+            </div>
+        </div>
+        <!-- card  -->
+        <div class="best-sellers">
+            <h2>សៀវភៅកុមារ</h2>
+            <div class="book-container">
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/A. A. Milne-The House at Pooh Corner.jpg" alt="The Midnight Library">
+                    <h3><b>The House at Pooh Corner</b></h3>
+                    <p class="author">A. A. Milne</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.8)</span>
+                    </div>
+                    <p class="price">$8.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/J. K. Rowling-The Tales of Beedle the Bard.jpg">
+                    <h3><b>The Tales of Beedle the Bard</b></h3>
+                    <p class="author">Wizard D</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/J.K. Rowling-Harry Potter and the Prisoner of Azkaban by.jpg"
+                        alt="The Midnight Library">
+                    <h3><b>Harry Potter and the Prisoner of Azkaba</b></h3>
+                    <p class="author">J.K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.8)</span>
+                    </div>
+                    <p class="price">$8.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <!-- Card 2 -->
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/J.K. Rowling-Harry Potter and the Chamber of Secrets.jpe">
+                    <h3><b>Harry Potter and the Chamber of Secrets</b></h3>
+                    <p class="author">J.K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/J.K. Rowling-Harry Potter and the Goblet of Fire.jpe">
+                    <h3><b>Harry Potter and the Goblet of Fire</b></h3>
+                    <p class="author">J.K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="fiction book/J.K. Rowling-Harry Potter and the Philosopher's Stone.jpe">
+                    <h3><b>Harry Potter and the Philosopher's Stone</b></h3>
+                    <p class="author">J.K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$10</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/A. A. Milne-Winnie-the-Pooh.jpe">
+                    <h3><b>Winnie-the-Pooh</b></h3><br>
+                    <p class="author">A. A. Milne</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Antoine de Saint-Exupéry-The Little Prince.jpe">
+                    <h3><b>The Little Prince</b></h3><br>
+                    <p class="author">Antoine de Saint-Exupéry</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Beatrix Potter-The Tale Of Benjamin Bunny .jpe">
+                    <h3><b>The Tale Of Benjamin Bunny</b></h3>
+                    <p class="author">Beatrix Potter</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Beatrix Potter-The Tale of Peter Rabbit.jpe">
+                    <h3><b>The Tale of Peter Rabbit</b></h3>
+                    <p class="author">Beatrix Potter</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Beatrix Potter-The Tale of Squirrel Nutkin.jpe">
+                    <h3><b>The Tale of Squirrel Nutkin</b></h3>
+                    <p class="author">Beatrix Potter</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Debbi Michiko Florence-Last Chance Academy .jpe">
+                    <h3><b>Last Chance Academy</b></h3>
+                    <p class="author">Debbi Michiko Florence</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Dr. Seuss-THE CAT IN THE HAT_.jpe">
+                    <h3><b>The Cat in the Hat</b></h3><br>
+                    <p class="author">Dr. Seuss</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Dr.Seuss-One Fish Two Fish Red Fish Blue Fish .jpe">
+                    <h3><b>One Fish Two Fish Red Fish Blue Fish</b></h3>
+                    <p class="author">Dr.Seuss</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Dr.Seuss-Green Eggs and Ham.jpe">
+                    <h3><b>Green Eggs and Ham</b></h3>
+                    <p class="author">Dr.Seuss</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Dr_ Seuss-Fox in Socks .jpe">
+                    <h3><b>Fox in Socks</b></h3>
+                    <p class="author">Dr.Seuss</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Genzaburō Yoshino-how do you live.jpe">
+                    <h3><b>how do you live</b></h3>
+                    <p class="author">Genzaburō Yoshino</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/J. K. Rowling-The Ickabog .jpe">
+                    <h3><b>The Ickabog</b></h3>
+                    <p class="author">J. K. Rowling</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Khaled Hosseini-Sea Prayer.jpe">
+                    <h3><b>Sea Prayer</b></h3>
+                    <p class="author">Khaled Hosseini</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/L. M. Montgomery-Anne of Avonlea.jpe">
+                    <h3><b>Anne of Avonlea</b></h3>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/L. M. Montgomery-anne of green gables.jpe">
+                    <h3><b>Anne of green gables</b></h3>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/L. M. Montgomery-Anne of the Island.jpe">
+                    <h3><b>Anne of the Island</b></h3><br>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/L. M. Montgomery-Anne of Windy Poplars-.jpe">
+                    <h3><b>Anne of Windy Poplars</b></h3>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/L. M. Montgomery-Emily of New Moon.jpe">
+                    <h3><b>Emily of New Moon</b></h3> <br>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/L. M. Montgomery-Rainbow Valley.jpe">
+                    <h3><b>Rainbow Valley</b></h3><br>
+                    <p class="author">L. M. Montgomery</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Lin Thompson-The House That Whispers.jpe">
+                    <h3><b>The House That Whispers</b></h3>
+                    <p class="author">Lin Thompson</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Roald Dahl-Charlie and the Chocolate Factory.jpe">
+                    <h3><b>Charlie and the Chocolate Factory</b></h3>
+                    <p class="author">Roald Dahl</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Roald Dahl-James and the Giant Peach.jpe">
+                    <h3 class="hdbs"><b>James and the Giant Peach</b></h3>
+                    <p class="author">Roald Dahl</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Roald Dahl-Matilda.jpe">
+                    <h3><b>Matilda</b></h3><br>
+                    <p class="author">Roald Dahl</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+                <div class="book-card" data-aos="fade-up">
+                    <img src="children/Roald Dahl-The BFG.jpe">
+                    <h3><b>The BFG</b></h3><br>
+                    <p class="author">Roald Dahl</p>
+                    <div class="rating">
+                        ★★★★★ <span>(4.9)</span>
+                    </div>
+                    <p class="price">$9.5</p>
+                    <button>បញ្ជាទិញ</button>
+                </div>
+            </div>
+        </div><br>
+    </div><br><br>
+    <!-- footer -->
+    <div data-aos="fade-up">
+        <div class="footer">
+            <div class="logo-footer">
+                <img src="pic/logo.png" alt="">
+                <h4>"សៀវភៅនីមួយៗបើកពិភពលោកថ្មីមួយ។"</h4>
+                <p>---------------------------------------</p>
+                <div class="logo-icon">
+                    <div class="delivery">
+                        <i class="fa-solid fa-box-open"></i>
+                        <p>Fast <br> <span>Delivery</span></p>
+                    </div>
+                    <div class="delivery">
+                        <i class="fa-regular fa-circle-check"></i>
+                        <p>
+                            <font style="margin-left: -6px;">Secure</font><br> <span>Payment</span>
+                        </p>
+                    </div>
+                    <div class="delivery">
+                        <i class="fa-solid fa-headset"></i>
+                        <p>24/7 <br> <span>Support</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="quick-list">
+                <h4>បញ្ជីរហ័ស៖</h4>
+                <a href="home kh.html" class="active"><i class="fa-solid fa-caret-right"></i>ទំព័រដើម</a><br>
+                <a href="Categories kh.html"><i class="fa-solid fa-caret-right"></i>ប្រភេទ</a><br>
+                <a href="authors kh.html"><i class="fa-solid fa-caret-right"></i>អ្នកនិពន្ធ</a><br>
+                <a href="New Arrivals kh.html"><i class="fa-solid fa-caret-right"></i>ទំនិញមកដល់ថ្មីៗ</a><br>
+                <a href="contact kh.html"><i class="fa-solid fa-caret-right"></i>ទំនាក់ទំនង</a><br>
+            </div>
+            <div class="Customer-Service">
+                <h4>សេវាកម្មអតិថិជន៖</h4>
+                <a href="" class="active">អំពីយើង</a><br>
+                <a href="">សំណួរដែលសួរញឹកញាប់</a><br>
+                <a href="">ការដឹកជញ្ជូន</a><br>
+                <a href="">ការប្រគល់ និងការសងប្រាក់វិញ</a><br>
+                <a href="">លក្ខខណ្ឌ</a><br>
+                <a href="">គោលការណ៍ឯកជនភាព</a><br>
+            </div>
+            <div class="Stay-Connected">
+                <h4>រក្សាទំនាក់ទំនង៖</h4><br>
+                <p>តាមដានពួកយើងនៅលើប្រព័ន្ធផ្សព្វផ្សាយសង្គម <br> និងទទួលបានព័ត៌មានថ្មីៗ </p>
+                <div class="social-icon">
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-telegram"></i></a>
+                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div><br>
+                <div class="Accept">
+                    <h5>ពួកយើងទទួល</h5>
+                    <img src="pic/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
